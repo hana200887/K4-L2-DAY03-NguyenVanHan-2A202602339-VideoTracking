@@ -1,0 +1,129 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "evidence\\pre-gold\\clip_01\\gt.txt",
+  "gt_file": "gold\\clip01\\gt.txt",
+  "pred_label": "PRED evidence\\pre-gold\\clip_01\\gt.txt",
+  "gt_label": "GT   gold\\clip01\\gt.txt",
+  "metrics": {
+    "HOTA": 0.0017,
+    "DetA": 0.0006,
+    "AssA": 0.0048,
+    "LocA": 0.9051,
+    "IDF1": 0.0,
+    "IDTP": 0,
+    "IDFP": 237,
+    "IDFN": 573,
+    "MOTA": -0.4136,
+    "MOTP": 0.0,
+    "IDSW": 0,
+    "FP": 237,
+    "FN": 573,
+    "GT_boxes": 573,
+    "PRED_boxes": 237
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.0,
+        "required": 0.8,
+        "passed": false
+      },
+      "MOTA": {
+        "value": -0.4136125654450262,
+        "required": 0.75,
+        "passed": false
+      },
+      "MOTP": {
+        "value": 0.0,
+        "required": 0.7,
+        "passed": false
+      }
+    },
+    "passed": false
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 2,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          1,
+          60
+        ],
+        "length": 60
+      },
+      {
+        "pred_track": 3,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          1,
+          60
+        ],
+        "length": 60
+      },
+      {
+        "pred_track": 5,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          10,
+          59
+        ],
+        "length": 50
+      },
+      {
+        "pred_track": 7,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          29,
+          60
+        ],
+        "length": 32
+      },
+      {
+        "pred_track": 6,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          15,
+          38
+        ],
+        "length": 24
+      },
+      {
+        "pred_track": 1,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          1,
+          9
+        ],
+        "length": 9
+      },
+      {
+        "pred_track": 4,
+        "reason": "không khớp track tham chiếu nào",
+        "frames": [
+          1,
+          2
+        ],
+        "length": 2
+      }
+    ],
+    "id_switches": [],
+    "loose_boxes": [],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 7
+  }
+}
